@@ -14,6 +14,10 @@ keymap("n", "<C-u>", "<C-u>zz", opts)
 keymap("n", "n", "nzzzv", opts)
 keymap("n", "N", "Nzzzv", opts)
 
+-- mouse wheel moves cursor, not just view
+keymap({ "n", "v" }, "<ScrollWheelUp>", "k", opts)
+keymap({ "n", "v" }, "<ScrollWheelDown>", "j", opts)
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
